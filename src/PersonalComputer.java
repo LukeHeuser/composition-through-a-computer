@@ -1,6 +1,6 @@
 public class PersonalComputer extends Product {
 
-    // the following fields is utilizing composition
+    // the following fields is utilizing composition. A computer, Has A, ---
     private ComputerCase computerCase;
     private Monitor monitor;
     private MotherBoard motherBoard;

@@ -12,10 +12,10 @@ public class Product {
     }
 }
 
-class Monitor extends Product {
+
+class Monitor extends Product { // This class inherits from Product (Is a Product)
     private int size;
     private String resolution;
-
 
     public Monitor(String model, String manufacturer) {
         super(model, manufacturer);
@@ -25,9 +25,11 @@ class Monitor extends Product {
         super(model, manufacturer);
         this.size = size;
         this.resolution = resolution;
-    }}
+    }
+}
 
-class MotherBoard extends Product {
+
+class MotherBoard extends Product { // This class inherits from Product (Is a Product)
 
     private int ramSlots;
     private int cardSlots;
@@ -37,13 +39,10 @@ class MotherBoard extends Product {
         super(model, manufacturer);
     }
 
-
     public void drawPixelAt(int x, int y, String color) {
         System.out.println(String.format(
                 "Drawing pixel at %d,%d in color %s ", x,y,color));
     }
-
-
 
     public MotherBoard(String model, String manufacturer, int ramSlots, int cardSlots, String bios) {
         super(model, manufacturer);
@@ -57,7 +56,8 @@ class MotherBoard extends Product {
     }
 }
 
-class ComputerCase extends Product {
+
+class ComputerCase extends Product { // This class inherits from Product (Is a Product)
     private String powerSupply;
 
     public ComputerCase(String model, String manufacturer) {
