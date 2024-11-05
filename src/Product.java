@@ -26,6 +26,12 @@ class Monitor extends Product { // This class inherits from Product (Is a Produc
         this.size = size;
         this.resolution = resolution;
     }
+
+    public void drawPixelAt(int x, int y, String color) {
+        System.out.println(String.format(
+                "Drawing pixel at %d,%d in color %s ", x,y,color));
+    }
+
 }
 
 
@@ -39,10 +45,7 @@ class MotherBoard extends Product { // This class inherits from Product (Is a Pr
         super(model, manufacturer);
     }
 
-    public void drawPixelAt(int x, int y, String color) {
-        System.out.println(String.format(
-                "Drawing pixel at %d,%d in color %s ", x,y,color));
-    }
+
 
     public MotherBoard(String model, String manufacturer, int ramSlots, int cardSlots, String bios) {
         super(model, manufacturer);
