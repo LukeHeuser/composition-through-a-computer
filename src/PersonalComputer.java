@@ -24,6 +24,7 @@ public class PersonalComputer extends Product {
         drawLogo();
     }
 
+    // Commented out to further hide this information.
 
 //    public ComputerCase getComputerCase() {
 //        return computerCase;
