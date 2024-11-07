@@ -12,11 +12,9 @@ public class Product {
     }
 }
 
-
 class Monitor extends Product { // This class inherits from Product (Is a Product)
     private int size;
     private String resolution;
-
     public Monitor(String model, String manufacturer) {
         super(model, manufacturer);
     }
@@ -31,12 +29,9 @@ class Monitor extends Product { // This class inherits from Product (Is a Produc
         System.out.println(String.format(
                 "Drawing pixel at %d,%d in color %s ", x,y,color));
     }
-
 }
 
-
 class MotherBoard extends Product { // This class inherits from Product (Is a Product)
-
     private int ramSlots;
     private int cardSlots;
     private String bios;
@@ -44,8 +39,6 @@ class MotherBoard extends Product { // This class inherits from Product (Is a Pr
     public MotherBoard(String model, String manufacturer) {
         super(model, manufacturer);
     }
-
-
 
     public MotherBoard(String model, String manufacturer, int ramSlots, int cardSlots, String bios) {
         super(model, manufacturer);
@@ -58,7 +51,6 @@ class MotherBoard extends Product { // This class inherits from Product (Is a Pr
         System.out.println("Program " + programName + " is loading...");
     }
 }
-
 
 class ComputerCase extends Product { // This class inherits from Product (Is a Product)
     private String powerSupply;
@@ -74,6 +66,5 @@ class ComputerCase extends Product { // This class inherits from Product (Is a P
     public void pressPowerButton() {
         System.out.println("Power button pressed");
     }
-
 }
 
